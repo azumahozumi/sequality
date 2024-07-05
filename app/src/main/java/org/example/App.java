@@ -39,4 +39,16 @@ public class App {
     }
     System.out.printf("Sum of odd of 1 to %d is %d. Sum of even is %d.%n", n, sumOdd, sumEven);
   }
+
+  public static void main(String[] args) {
+    App app = new App();
+
+    System.out.println(app.getGreeting());
+
+    app.calculateSumAndAverage(2, 3);
+
+    app.calculateSumAndAverageFrom1ToN(10);
+
+    app.calculateSumOfOddAndEven(10);
+  }
 }
